@@ -116,7 +116,7 @@ const AuthForm = ({ type }: { type: string }) => {
                 </div>
             </header>
             {user ? (
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
                     {/* <PlaidLink user={user} variant="primary" /> */}
                 </div>
             ) : (
@@ -124,7 +124,7 @@ const AuthForm = ({ type }: { type: string }) => {
                     <Form {...form}>
                         <form
                             onSubmit={form.handleSubmit(onSubmit)}
-                            className="space-y-8"
+                            className="space-y-3"
                         >
                             <CustomInput
                                 control={form.control}
@@ -142,7 +142,7 @@ const AuthForm = ({ type }: { type: string }) => {
 
                             {type === "sign-up" && (
                                 <>
-                                    <div className="flex gap-4">
+                                    <div className="flex gap-2">
                                         <CustomInput
                                             control={form.control}
                                             name="firstName"
@@ -168,7 +168,7 @@ const AuthForm = ({ type }: { type: string }) => {
                                         label="City"
                                         placeholder="Enter your city"
                                     />
-                                    <div className="flex gap-4">
+                                    <div className="flex gap-2">
                                         <CustomInput
                                             control={form.control}
                                             name="state"
@@ -182,7 +182,7 @@ const AuthForm = ({ type }: { type: string }) => {
                                             placeholder="Example: 11101"
                                         />
                                     </div>
-                                    <div className="flex gap-4">
+                                    <div className="flex gap-2">
                                         <CustomInput
                                             control={form.control}
                                             name="dateOfBirth"
@@ -199,7 +199,7 @@ const AuthForm = ({ type }: { type: string }) => {
                                 </>
                             )}
 
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-col gap-2">
                                 <Button
                                     type="submit"
                                     disabled={isLoading}
