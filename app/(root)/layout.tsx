@@ -13,6 +13,10 @@ export default async function RootLayout({
 
     const loggedIn = await getLoggedInUser();
 
+    // console.log('====================================');
+    // console.log("loggedIn user: " + loggedIn.firstName + " " + loggedIn.lastName);
+    // console.log('====================================');
+
     if(!loggedIn) redirect('/sign-in')
 
     return (
