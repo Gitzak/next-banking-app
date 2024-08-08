@@ -75,7 +75,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
       ) : (
         <Button
           onClick={() => open()}
-          className="plaidlink-ghost bg-blue-600 hover:bg-blue-700"
+          className="plaidlink-ghost bg-blue-600 hover:bg-blue-700 hover:shadow-md shadow-sm"
         >
           <Image
             src="/icons/connect-bank.svg"
